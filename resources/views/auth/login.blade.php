@@ -43,7 +43,7 @@
                             <div class="col-md-6 offset-md-4">
                                 <p>Login With : </p>
                                <a href="{{ url('login/facebook') }}" class="btn btn-success"> Facebook  </a>
-                               <a href="" class="btn btn-success"> Google  </a>
+                               <a href="{{ url('login/google') }}" class="btn btn-success"> Google  </a>
                                <a href="" class="btn btn-success"> GitHub  </a>
                             </div>
                         </div>

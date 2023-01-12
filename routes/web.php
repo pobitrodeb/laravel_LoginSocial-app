@@ -23,3 +23,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('login/facebook', [SocialController::class, 'facebookRedirect'])->name('facebook');
 Route::get('login/facebook/callbackpobitro', [SocialController::class, 'loginWithFacebook'])->name('facebook');
+
+
+Route::get('login/google', [SocialController::class, 'googleRedirect']);
+Route::get('login/google/callback', [SocialController::class, 'loginWithGoogle']);

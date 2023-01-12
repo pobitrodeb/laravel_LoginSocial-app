@@ -39,5 +39,13 @@ return [
         // 'redirect' => 'http://example.com/callback-url',
         'redirect' => 'http://localhost:8000/login/facebook/callbackpobitro',
     ],
+    'google' => [
+        // 'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_id' =>'60966894343-o4gi7t9nqip7hvbq6q3416hrla18t8ec.apps.googleusercontent.com',
+        // 'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'client_secret' => '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',
+        // 'redirect' => 'http://example.com/callback-url',
+        'redirect' => 'http://localhost:8000/login/google/callback',
+    ],
 
 ];
