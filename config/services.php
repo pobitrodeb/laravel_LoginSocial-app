@@ -30,11 +30,14 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-    
-    'github' => [
-        'client_id' => env('GITHUB_CLIENT_ID'),
-        'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => 'http://example.com/callback-url',
+
+    'facebook' => [
+        // 'client_id' => env('GITHUB_CLIENT_ID'),
+        'client_id' =>'654488539790480',
+        // 'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'client_secret' => '985a9dc44688e57780a3b6f952a91f69',
+        // 'redirect' => 'http://example.com/callback-url',
+        'redirect' => 'http://localhost:8000/login/facebook/callbackpobitro',
     ],
 
 ];

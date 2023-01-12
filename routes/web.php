@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\SocialController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('login/facebook', [SocialController::class, 'facebookRedirect'])->name('facebook');
+Route::get('login/facebook/callbackpobitro', [SocialController::class, 'loginWithFacebook'])->name('facebook');
